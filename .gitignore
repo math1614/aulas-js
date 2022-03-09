@@ -1,18 +1,14 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+alert("Bem-vindo!");
 
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+function exibeValor(){
+    var v1,v2,soma;
+    v1 = document.getElementById("v1").value;
+    v2 = document.getElementById("v2").value;
+    soma = parseInt(v1,10)+parseInt(v2,10);
+    if(!isNaN(soma)){
+        alert(soma);
+    } else {
+        alert("Informe um número"); 
+    }
+    
+}
